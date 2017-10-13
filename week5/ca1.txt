@@ -1,0 +1,9 @@
+1. ls -t-r
+
+2. the user may not have read access to the downloads folder. this could be fixed by running the command "chmod +r Downloads/"
+
+3. the if statement is expecting the user to input the number to compare to cnt. this could be fixed by replacing $1 with a hard coded number, or by running the command "./cpu_count.sh 1" in the terminal
+
+4. grep /  /home | wc -l
+
+5. -eq can only be used with integers, but is being used here to compare two strings, this can be fixed by replacing -eq with "=". (ie. line 6 would become "if [ ! $dirA = $dirB ] ; then")
